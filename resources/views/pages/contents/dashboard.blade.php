@@ -15,7 +15,7 @@
                 <span class="italic">{{ Auth::user()->name }}.</span>
             </p>
         </section>
-        <section class="w-full overflow-hidden md:px-5 max-md:px-3 mt-3 pb-5">
+        <section class="w-full overflow-hidden md:px-5 max-md:px-3 mt-3 md:pb-5 max-md:pb-3">
             <p class="font-medium md:text-lg">Profil Santri :</p>
             <div class="max-md:overflow-x-auto md:mt-3 max-md:mt-2">
                 <p class="flex items-center md:py-4 max-md:py-3 border-b-2">
