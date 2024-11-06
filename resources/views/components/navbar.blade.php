@@ -1,7 +1,7 @@
 <nav class="w-full md:min-h-16 text-white-text mt-5 mb-7">
     <section class="flex items-center justify-between w-full -mb-1">
         <div class="flex items-center max-md:space-x-1">
-            <button type="button" onclick="showMenu(event)" class="outline-none sm:hidden pt-1">
+            <button type="button" onclick="showMenu(event)" class="outline-none sm:hidden">
                 <span class="material-symbols-outlined max-md:text-2xl">
                     menu
                 </span>
@@ -11,7 +11,7 @@
         <ul>
             <li class="mb-2">
                 <button type="button" onclick="toggleDropdown(event)"
-                    class="flex items-center md:space-x-3 max-md:space-x-2 outline-none">
+                    class="flex items-center md:space-x-3 max-md:space-x-1 outline-none">
                     <h1 class="uppercase font-bold text-sm max-md:hidden">{{ Auth::user()->name }}</h1>
                     <span class="material-symbols-outlined sm:hidden">
                         keyboard_arrow_down
