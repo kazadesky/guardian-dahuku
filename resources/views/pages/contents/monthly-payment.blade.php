@@ -30,6 +30,9 @@
                     <th scope="col" class="px-6 py-3">
                         Tanggal Input
                     </th>
+                    <th scope="col" class="px-6 py-3">
+                        Tanggal Pembaharuan
+                    </th>
                 </tr>
             </thead>
             @php
@@ -55,6 +58,9 @@
                         </td>
                         <td class="px-6 py-4">
                             {{ \Carbon\Carbon::parse($payment->created_at)->format('d-m-Y') }}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{ \Carbon\Carbon::parse($payment->updated_at)->format('d-m-Y') }}
                         </td>
                     </tr>
                 @empty

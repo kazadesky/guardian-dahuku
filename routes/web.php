@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware("guest")->group(function () {
     Route::get('/', function () {
         return view('welcome');
-    });
+    })->name('welcome');
 
     Route::get('login', [AuthController::class, 'login'])->name('login');
     Route::post('login', [AuthController::class, 'loginProcess'])->name('login.process');
@@ -24,7 +24,6 @@ Route::name('user.')->middleware(['auth', 'auth.session'])->group(function () {
         Route::get("{id}/edit", [AccountController::class, "profile"])->name("profile");
         Route::put("{id}/update", [AccountController::class, "updateProfile"])->name("profile.update-image");
         Route::patch("{id}/update", [AccountController::class, "updateAccount"])->name("profile.update-account");
-        Route::delete("{id}/delete", [AccountController::class, "deleteAccount"])->name("profile.delete");
     });
 
     Route::post('logout', [AuthController::class, 'logout'])->name('logout');
