@@ -15,8 +15,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/assets/app.css') }}">
-    {{-- @vite(['resources/js/app.js', 'resources/css/app.css']) --}}
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 
 <body
@@ -52,9 +51,9 @@
             <div class="md:mb-4 max-md:mb-3">
                 <div class="flex items-center justify-between md:mb-2 max-md:mb-1">
                     <label for="password" class="block font-medium">Password</label>
-                    <a href="" onclick="return false"
+                    {{-- <a href="" onclick="return false"
                         class="outline-none capitalize text-gray-600 md:text-sm max-md:text-xs underline underline-offset-2 active:text-elf-green focus:text-elf-green">lupa
-                        password?</a>
+                        password?</a> --}}
                 </div>
                 <div class="relative w-full">
                     <input type="password" name="password" id="password"
